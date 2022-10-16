@@ -1,0 +1,26 @@
+.searchform{
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 1rem;
+  background-color: rgb(243, 243, 243);
+  font-size: 1.2rem;
+
+  form{
+    position:relative;
+    left:40px;
+  }
+   
+  input{
+    
+    border:1px solid transparent;
+    background-color: rgb(243, 243, 243);
+    font-weight: 500;
+
+  }
+  input:focus{
+    border:none;
+    outline:none;
+  }
+    
+}
+

@@ -1,0 +1,24 @@
+footer{
+    background-color:$footer-background;
+    padding: 20px 25px 20px 20px;
+    font-size:14px;
+}
+.footer__logo{
+    font-family: "Shrikhand", cursive;
+    color:white;
+    padding-bottom:7px;
+}
+.footer__list{
+    list-style:none;
+}
+
+footer i{
+    color:white;
+    font-weight:600;
+    padding-right:7px;
+}
+
+footer li {
+    color: white;
+    padding:3px;
+}

@@ -1,0 +1,50 @@
+.card{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden; // hide overflow color from background color debug
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (min-width:$breakpoint){
+    .card{
+        width:24%;
+    }
+    .cardDesktop{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+}
+
+.card a {
+    display: block;
+    
+}
+
+.card .card__picture {
+    position: relative;
+}
+
+.card .card__picture img {
+    height: 175px;
+    width:100%;
+    object-fit:cover;
+    position: relative;
+}
+
+.card .card__description {
+    padding: 20px 12px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.card .card__description h3 {
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.card .label {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+}

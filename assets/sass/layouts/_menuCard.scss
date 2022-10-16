@@ -1,0 +1,188 @@
+
+.menuCard__content{
+  @media (min-width:$breakpoint) and (max-width:1099px){
+    display:flex;
+    flex-direction:column;
+    width:60%;
+  }
+  @media (min-width:$breakpointmenu){
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    nav{
+        width:65%;
+       @media (min-width:1250px){
+       width:75%;
+       }
+       @media (min-width:1300px){
+        width:80%;
+        }
+        @media (min-width:1600px){
+          width:90%;
+          }
+      }
+    }
+  }
+
+
+ 
+
+.headerMenu {
+  display: flex;
+  justify-content: center;
+
+}
+
+.back {
+  position: absolute;
+  left: 18px;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.menuImg {
+  height: 18rem;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+}
+
+
+.menuCard {
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+
+  &__content h2 {
+    text-transform: uppercase;
+    position: relative;
+    font-weight: normal;
+  }
+
+  &__content h2::after {
+    /* decoration du soulignement sur le h3 en bas*/
+    content: "";
+    width: 3rem;
+    height: 0.25rem;
+    background-color: $color-tertiary;
+    position: absolute;
+    left: 0;
+    top: 30px;
+  }
+
+  &__title {
+    padding: 1rem 2rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Shrikhand", cursive;
+  }
+
+  &__list {
+    margin: 25px 0;
+  }
+
+  &__list ol {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.menuCardItem {
+  display: flex;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 13px;
+  animation: showItems .6s;
+  animation-fill-mode: both;
+  transform: scale(0);
+
+  
+  @media (min-width:$breakpoint){
+    width:140%;
+  }
+
+  .menuCardItem__content {
+    flex-grow: 1;
+    min-width: 0;
+    position: relative;
+    padding: 15px;
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+
+  .menuCardItem__content>div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .menuCardItem__content .menuCardItem__description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+
+  .menuCardItem__submit {
+    background: #99E2D0;
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    position: relative;
+    // valeur de fin animation
+    right: -50px;
+    margin-left: -50px;
+    transition-duration: 0.5s;
+  }
+
+  .menuCardItem__submit i {
+    /* rotation de la class i 360 degres */
+    transform: rotate(360deg);
+    transition-duration: 0.7s;
+  }
+
+  &:hover .menuCardItem__submit i {
+    transform: rotate(0);
+  }
+
+  &:hover .menuCardItem__submit {
+    // valeur de départ animation
+    right: 0;
+    margin-left: 0px;
+    transition-duration: 0.5s;
+
+
+  }
+}
+
+/* boucle pour afficher les items numeroter de 1 à 9 en ordre croissant avec la classe delay */
+@for $i from 0 to 9 {
+  .delay-#{$i} {
+    animation-delay: #{calc($i/10)}s;
+  }
+}

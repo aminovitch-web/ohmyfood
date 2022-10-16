@@ -1,0 +1,20 @@
+/* definit les etapes de l'animation et apparition des items */
+@keyframes showItems {
+    0% {
+      transform: scale(0)
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+ 
+  @keyframes showloading{
+    0% {
+        transform: scale(1)
+      }
+      100% {
+        transform: scale(0);
+        
+      }
+  }
+ 

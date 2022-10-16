@@ -1,0 +1,43 @@
+body {
+    font-family: 'roboto', sans-serif;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h4,
+p {
+    margin: 0px;
+
+}
+
+ul,
+li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-weight: 550;
+}
+
+.restaurants {
+    background-color: $color-quartenarylight;
+}
+
+.restaurants h2 {
+    padding-top: 20px;
+}
+
+article {
+    margin-top: 20px;
+}
+
+/*Desktop version */
+
+

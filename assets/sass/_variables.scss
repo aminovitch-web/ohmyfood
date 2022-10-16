@@ -1,0 +1,28 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Shrikhand');
+
+$color-primary:#9356DC !default;
+$color-secondary: #FF79DA !default;
+$color-tertiary: #99E2D0 !default;
+$color-quaternary: #959595 !default;
+$color-quartenarylight: #F2F2F2 !default;
+$color-label:  #99e2d0;
+$colortext-label: #1f9779;
+$color-searchform:#eaeaea;
+
+/**breakpoint tablette bureau **/
+
+$breakpoint:930px;
+$breakpointmenu:1100px;
+
+$grid-gutter-width: 1.5rem !default;
+$grid-row-columns: 6 !default;
+$container-padding-x: 1.5rem !default;
+
+$footer-background: #353535 !default;
+
+$button-gradient: linear-gradient(160deg, $color-secondary 0%, $color-primary 100%) !default;
+$icon-gradient: linear-gradient(180deg, $color-primary 0%, $color-secondary 100%) !default;
+$button-color: #fff !default;
+

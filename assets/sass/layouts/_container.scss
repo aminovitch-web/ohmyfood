@@ -1,0 +1,15 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $container-padding-x;
+    padding-left: $container-padding-x;
+}
+.spacing{
+    padding:30px;
+}
+.containerButton{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 3rem 0;
+}
